@@ -1,0 +1,38 @@
+{
+    "name": "indigophp/notification",
+    "description": "A simple notification library",
+    "license": "MIT",
+    "keywords": ["notification"],
+    "homepage": "https://indigophp.com",
+    "authors": [
+        {
+            "name": "Márk Sági-Kazár",
+            "email": "mark.sagikazar@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "indigophp/sms": "dev-develop",
+        "monolog/monolog": "dev-master",
+        "symfony/process": "~2.5",
+        "codeception/codeception": "~2.0.0",
+        "codeception/mockery-module": "dev-master"
+    },
+    "suggest": {
+        "indigophp/sms": "Used for Sms Handler",
+        "monolog/monolog": "Used for Logger Handler",
+        "symfony/process": "Used for NotifySend Handler"
+    },
+    "autoload": {
+        "psr-0": {
+            "Codeception\\Extension\\": "lib/"
+        },
+        "psr-4": {
+            "Indigo\\Notify\\": "src/"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
